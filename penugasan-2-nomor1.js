@@ -27,7 +27,7 @@ const warna = {
 // Stok gula yang tersedia
 let stokGula = {
     "Gula Batu": 5,
-    "Gula Pasir": 5,
+    "Gula Pasir": 3,
     "Gula Merah": 0
 };
 
@@ -64,10 +64,10 @@ const jalankanProgram = async () => {
 ${warna.cyan}=========================================${warna.reset}
    ${warna.hijau}${warna.terang}🍵  SELAMAT DATANG DI KEDAI TEH  🍵${warna.reset}
 ${warna.cyan}=========================================${warna.reset}
-Pilihan Gula Tersedia:
-   🪨   Gula Batu${warna.reset}
-   🍚  Gula Pasir${warna.reset}
-   🏺  Gula Merah${warna.reset}
+Pilihan Gula:
+   🪨   Gula Batu  (Stok: ${stokGula['Gula Batu']}) ${warna.reset} 
+   🍚  Gula Pasir (Stok: ${stokGula['Gula Pasir']})${warna.reset}
+   🏺  Gula Merah (Stok: ${stokGula['Gula Merah']})${warna.reset}
 ${warna.cyan}=========================================${warna.reset}`;
     // tampilin menu
     console.log(menuTampilan);
